@@ -1,0 +1,42 @@
+nekotuto.step_one:
+  path: '/nekotuto/step-one'
+  defaults:
+    _title: 'Step One'
+    _form: 'Drupal\nekotuto\Form\StepOneForm'
+  requirements:
+    _permission: 'access content'
+
+nekotuto.step_two:
+  path: '/nekotuto/step-two'
+  defaults:
+    _title: 'Step Two'
+    _form: 'Drupal\nekotuto\Form\StepTwoForm'
+  requirements:
+    _permission: 'access content'
+
+nekotuto.step_threeform:
+  path: '/nekotuto/step-threeform'
+  defaults:
+    _title: 'Step Threeform'
+    _form: 'Drupal\nekotuto\Form\StepThreeform'
+  requirements:
+    _permission: 'access content'
+
+nekotuto.wizard.form:
+  path: '/nekotuto/wizard'
+  defaults:
+    _wizard: '\Drupal\nekotuto\Wizard\MultiStepForm'
+    _title: 'Wizard Test'
+    tempstore_id: 'nekotuto.wizard.form'
+    machine_name: 'MultiStepForm'
+  requirements:
+    _access: 'TRUE'
+nekotuto.wizard.form.step:
+  path: '/nekotuto/wizard/{step}'
+  defaults:
+    _wizard: '\Drupal\nekotuto\Wizard\MultiStepForm'
+    _title: 'Wizard Test'
+    tempstore_id: 'nekotuto.wizard.form'
+    machine_name: 'MultiStepForm'
+  requirements:
+    _access: 'TRUE'

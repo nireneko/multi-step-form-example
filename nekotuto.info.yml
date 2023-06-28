@@ -1,0 +1,7 @@
+name: nekotuto multi step form
+type: module
+description: Provides a multi-step form for the site.
+package: Custom
+core_version_requirement: ^9 || ^10
+dependencies:
+  - ctools:ctools
